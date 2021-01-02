@@ -55,17 +55,17 @@
             this.groupBox1.Controls.Add(this.addCategoryButton);
             this.groupBox1.Controls.Add(this.categoryNameTextBox);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 74);
+            this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(78, 131);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(470, 151);
+            this.groupBox1.Size = new System.Drawing.Size(638, 167);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add New Category";
+            this.groupBox1.Text = "Category Add/Update/Delete";
             // 
             // deleteCategoryButton
             // 
-            this.deleteCategoryButton.Location = new System.Drawing.Point(330, 116);
+            this.deleteCategoryButton.Location = new System.Drawing.Point(376, 116);
             this.deleteCategoryButton.Name = "deleteCategoryButton";
             this.deleteCategoryButton.Size = new System.Drawing.Size(134, 29);
             this.deleteCategoryButton.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             // updateCategoryButton
             // 
-            this.updateCategoryButton.Location = new System.Drawing.Point(177, 116);
+            this.updateCategoryButton.Location = new System.Drawing.Point(225, 116);
             this.updateCategoryButton.Name = "updateCategoryButton";
             this.updateCategoryButton.Size = new System.Drawing.Size(135, 29);
             this.updateCategoryButton.TabIndex = 2;
@@ -85,7 +85,7 @@
             // 
             // addCategoryButton
             // 
-            this.addCategoryButton.Location = new System.Drawing.Point(30, 116);
+            this.addCategoryButton.Location = new System.Drawing.Point(80, 116);
             this.addCategoryButton.Name = "addCategoryButton";
             this.addCategoryButton.Size = new System.Drawing.Size(124, 29);
             this.addCategoryButton.TabIndex = 2;
@@ -97,7 +97,7 @@
             // 
             this.categoryNameTextBox.Location = new System.Drawing.Point(177, 50);
             this.categoryNameTextBox.Name = "categoryNameTextBox";
-            this.categoryNameTextBox.Size = new System.Drawing.Size(145, 26);
+            this.categoryNameTextBox.Size = new System.Drawing.Size(158, 26);
             this.categoryNameTextBox.TabIndex = 1;
             // 
             // label1
@@ -105,16 +105,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(51, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 19);
+            this.label1.Size = new System.Drawing.Size(119, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Category Name";
             // 
             // loadCategoryDataGridView
             // 
             this.loadCategoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.loadCategoryDataGridView.Location = new System.Drawing.Point(540, 103);
+            this.loadCategoryDataGridView.Location = new System.Drawing.Point(821, 184);
             this.loadCategoryDataGridView.Name = "loadCategoryDataGridView";
-            this.loadCategoryDataGridView.Size = new System.Drawing.Size(228, 233);
+            this.loadCategoryDataGridView.Size = new System.Drawing.Size(246, 263);
             this.loadCategoryDataGridView.TabIndex = 5;
             this.loadCategoryDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.loadCategoryDataGridView_CellClick);
             // 
@@ -122,7 +122,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(593, 56);
+            this.label4.Location = new System.Drawing.Point(887, 131);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 22);
             this.label4.TabIndex = 2;
@@ -131,9 +131,9 @@
             // categoryWiseProductDataGridView
             // 
             this.categoryWiseProductDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoryWiseProductDataGridView.Location = new System.Drawing.Point(30, 84);
+            this.categoryWiseProductDataGridView.Location = new System.Drawing.Point(42, 103);
             this.categoryWiseProductDataGridView.Name = "categoryWiseProductDataGridView";
-            this.categoryWiseProductDataGridView.Size = new System.Drawing.Size(369, 163);
+            this.categoryWiseProductDataGridView.Size = new System.Drawing.Size(549, 229);
             this.categoryWiseProductDataGridView.TabIndex = 6;
             // 
             // groupBox2
@@ -142,17 +142,17 @@
             this.groupBox2.Controls.Add(this.categoryWiseProductcomboBox);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.categoryWiseProductDataGridView);
-            this.groupBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(24, 270);
+            this.groupBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(78, 338);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(440, 253);
+            this.groupBox2.Size = new System.Drawing.Size(638, 357);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Search Product List by Category";
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(330, 42);
+            this.refreshButton.Location = new System.Drawing.Point(487, 47);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(104, 29);
             this.refreshButton.TabIndex = 3;
@@ -163,7 +163,7 @@
             // categoryWiseProductcomboBox
             // 
             this.categoryWiseProductcomboBox.FormattingEnabled = true;
-            this.categoryWiseProductcomboBox.Location = new System.Drawing.Point(147, 44);
+            this.categoryWiseProductcomboBox.Location = new System.Drawing.Point(195, 49);
             this.categoryWiseProductcomboBox.Name = "categoryWiseProductcomboBox";
             this.categoryWiseProductcomboBox.Size = new System.Drawing.Size(165, 27);
             this.categoryWiseProductcomboBox.TabIndex = 7;
@@ -172,16 +172,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 47);
+            this.label2.Location = new System.Drawing.Point(51, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 19);
+            this.label2.Size = new System.Drawing.Size(119, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Category Name";
             // 
             // backToHomeButton
             // 
             this.backToHomeButton.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backToHomeButton.Location = new System.Drawing.Point(24, 22);
+            this.backToHomeButton.Location = new System.Drawing.Point(78, 52);
             this.backToHomeButton.Name = "backToHomeButton";
             this.backToHomeButton.Size = new System.Drawing.Size(115, 29);
             this.backToHomeButton.TabIndex = 8;
@@ -193,7 +193,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 535);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1149, 747);
             this.Controls.Add(this.backToHomeButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label4);

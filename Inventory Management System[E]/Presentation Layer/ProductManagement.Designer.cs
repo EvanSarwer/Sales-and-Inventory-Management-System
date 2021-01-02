@@ -64,16 +64,16 @@
             this.groupBox1.Controls.Add(this.productNameTextBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 92);
+            this.groupBox1.Location = new System.Drawing.Point(110, 177);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(344, 331);
+            this.groupBox1.Size = new System.Drawing.Size(448, 408);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Product Add/Update/Delete";
             // 
             // DeleteProductButton
             // 
-            this.DeleteProductButton.Location = new System.Drawing.Point(235, 267);
+            this.DeleteProductButton.Location = new System.Drawing.Point(309, 331);
             this.DeleteProductButton.Name = "DeleteProductButton";
             this.DeleteProductButton.Size = new System.Drawing.Size(95, 30);
             this.DeleteProductButton.TabIndex = 10;
@@ -83,7 +83,7 @@
             // 
             // UpdateProductButton
             // 
-            this.UpdateProductButton.Location = new System.Drawing.Point(134, 267);
+            this.UpdateProductButton.Location = new System.Drawing.Point(189, 331);
             this.UpdateProductButton.Name = "UpdateProductButton";
             this.UpdateProductButton.Size = new System.Drawing.Size(95, 30);
             this.UpdateProductButton.TabIndex = 9;
@@ -94,7 +94,7 @@
             // productCategoryComboBox
             // 
             this.productCategoryComboBox.FormattingEnabled = true;
-            this.productCategoryComboBox.Location = new System.Drawing.Point(147, 188);
+            this.productCategoryComboBox.Location = new System.Drawing.Point(167, 238);
             this.productCategoryComboBox.Name = "productCategoryComboBox";
             this.productCategoryComboBox.Size = new System.Drawing.Size(154, 27);
             this.productCategoryComboBox.TabIndex = 8;
@@ -102,7 +102,7 @@
             // productQuantityTextBox
             // 
             this.productQuantityTextBox.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productQuantityTextBox.Location = new System.Drawing.Point(147, 142);
+            this.productQuantityTextBox.Location = new System.Drawing.Point(167, 178);
             this.productQuantityTextBox.Name = "productQuantityTextBox";
             this.productQuantityTextBox.Size = new System.Drawing.Size(154, 26);
             this.productQuantityTextBox.TabIndex = 7;
@@ -110,7 +110,7 @@
             // productPriceTextBox
             // 
             this.productPriceTextBox.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productPriceTextBox.Location = new System.Drawing.Point(147, 98);
+            this.productPriceTextBox.Location = new System.Drawing.Point(167, 118);
             this.productPriceTextBox.Name = "productPriceTextBox";
             this.productPriceTextBox.Size = new System.Drawing.Size(154, 26);
             this.productPriceTextBox.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 191);
+            this.label4.Location = new System.Drawing.Point(20, 241);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 19);
             this.label4.TabIndex = 5;
@@ -129,7 +129,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 105);
+            this.label3.Location = new System.Drawing.Point(24, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 19);
             this.label3.TabIndex = 4;
@@ -139,7 +139,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 142);
+            this.label2.Location = new System.Drawing.Point(24, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 3;
@@ -147,7 +147,7 @@
             // 
             // addProductButton
             // 
-            this.addProductButton.Location = new System.Drawing.Point(11, 267);
+            this.addProductButton.Location = new System.Drawing.Point(46, 331);
             this.addProductButton.Name = "addProductButton";
             this.addProductButton.Size = new System.Drawing.Size(117, 30);
             this.addProductButton.TabIndex = 2;
@@ -158,7 +158,7 @@
             // productNameTextBox
             // 
             this.productNameTextBox.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productNameTextBox.Location = new System.Drawing.Point(147, 53);
+            this.productNameTextBox.Location = new System.Drawing.Point(167, 53);
             this.productNameTextBox.Name = "productNameTextBox";
             this.productNameTextBox.Size = new System.Drawing.Size(154, 26);
             this.productNameTextBox.TabIndex = 1;
@@ -178,17 +178,17 @@
             this.loadProductListGridView.AllowUserToAddRows = false;
             this.loadProductListGridView.AllowUserToDeleteRows = false;
             this.loadProductListGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.loadProductListGridView.Location = new System.Drawing.Point(373, 190);
+            this.loadProductListGridView.Location = new System.Drawing.Point(634, 285);
             this.loadProductListGridView.Name = "loadProductListGridView";
             this.loadProductListGridView.ReadOnly = true;
-            this.loadProductListGridView.Size = new System.Drawing.Size(415, 232);
+            this.loadProductListGridView.Size = new System.Drawing.Size(453, 232);
             this.loadProductListGridView.TabIndex = 1;
             this.loadProductListGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.loadProductListGridView_CellClick);
             // 
             // backToHomeButton
             // 
             this.backToHomeButton.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backToHomeButton.Location = new System.Drawing.Point(40, 24);
+            this.backToHomeButton.Location = new System.Drawing.Point(110, 59);
             this.backToHomeButton.Name = "backToHomeButton";
             this.backToHomeButton.Size = new System.Drawing.Size(97, 31);
             this.backToHomeButton.TabIndex = 2;
@@ -200,7 +200,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(513, 52);
+            this.label5.Location = new System.Drawing.Point(819, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 19);
             this.label5.TabIndex = 3;
@@ -210,7 +210,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(369, 144);
+            this.label6.Location = new System.Drawing.Point(630, 225);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 19);
             this.label6.TabIndex = 9;
@@ -219,7 +219,7 @@
             // searchProductNameTextBox
             // 
             this.searchProductNameTextBox.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchProductNameTextBox.Location = new System.Drawing.Point(578, 141);
+            this.searchProductNameTextBox.Location = new System.Drawing.Point(863, 222);
             this.searchProductNameTextBox.Name = "searchProductNameTextBox";
             this.searchProductNameTextBox.Size = new System.Drawing.Size(172, 26);
             this.searchProductNameTextBox.TabIndex = 10;
@@ -228,7 +228,7 @@
             // RefreshButton
             // 
             this.RefreshButton.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RefreshButton.Location = new System.Drawing.Point(373, 106);
+            this.RefreshButton.Location = new System.Drawing.Point(634, 177);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(75, 23);
             this.RefreshButton.TabIndex = 11;
@@ -240,7 +240,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1159, 682);
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.searchProductNameTextBox);
             this.Controls.Add(this.label6);
