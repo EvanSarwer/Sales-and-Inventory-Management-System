@@ -15,6 +15,7 @@ namespace Sales_and_Inventory_Management_System.Business_Logic_Layer
         {
             this.userDataAccess = new UserDataAccess();
         }
+
         public bool LoginValidation(string username,string password)
         {
             return userDataAccess.LoginValidation(username,password);
@@ -23,6 +24,7 @@ namespace Sales_and_Inventory_Management_System.Business_Logic_Layer
         {
             return userDataAccess.UsernameValidation(username);
         }
+
         public List<User> GetListOfUsers()
         {
             return this.userDataAccess.GetAllUsers();
@@ -34,7 +36,7 @@ namespace Sales_and_Inventory_Management_System.Business_Logic_Layer
         }
 
 
-        public int AddNewUser(string name,string userName,string password,string email,string dateOfBirth,string gender)
+        public int AddNewUser(string name,string userName,string password,string email,string dateOfBirth,string gender,string type)
         {
             User user = new User()
             {
@@ -43,9 +45,39 @@ namespace Sales_and_Inventory_Management_System.Business_Logic_Layer
                 Password=password,
                 Email=email,
                 DateOfBirth=dateOfBirth,
-                Gender=gender
+                Gender=gender,
+                Type=type
             };
             return this.userDataAccess.InsertUser(user);
+        }
+        public int AddNewUserForReg(string name, string userName, string password, string email, string dateOfBirth, string gender,string bloodGroup)
+        {
+            User user = new User()
+            {
+                Name = name,
+                Username = userName,
+                Password = password,
+                Email = email,
+                DateOfBirth = dateOfBirth,
+                Gender = gender,
+                BloodGroup=bloodGroup
+            };
+            return this.userDataAccess.InsertUserForReg(user);
+        }
+        public int UpdateUserForAdmin(int id, string name, string userName, string passsword, string email, string dateOfBirth, string gender,string type)
+        {
+            User user = new User()
+            {
+                Id = id,
+                Name = name,
+                Username = userName,
+                Password = passsword,
+                Email = email,
+                DateOfBirth = dateOfBirth,
+                Gender = gender,
+                Type=type
+            };
+            return this.userDataAccess.UpdateUserForAdmin(user);
         }
         public int UpdateUser(int id,string name,string userName,string passsword,string email,string dateOfBirth,string gender)
         {
@@ -74,6 +106,11 @@ namespace Sales_and_Inventory_Management_System.Business_Logic_Layer
         public string GetUserType(string username)
         {
             return this.userDataAccess.GetUserType(username);
+        }
+
+        public string GetName(string username)
+        {
+            return this.userDataAccess.GetName(username);
         }
 
         public string GetUserDateOfBirth(int id)

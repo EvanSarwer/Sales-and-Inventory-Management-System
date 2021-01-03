@@ -62,6 +62,12 @@
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Sale.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Presentation Layer\AdminAccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\AdminAccountManagement.Designer.cs">
+      <DependentUpon>AdminAccountManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\CategoryManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="Presentation Layer\CreateSale.Designer.cs">
       <DependentUpon>CreateSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\EmployeeManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\EmployeeManagement.Designer.cs">
+      <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation Layer\HomeForAdmin.cs">
       <SubType>Form</SubType>
@@ -86,6 +98,12 @@
     <Compile Include="Presentation Layer\HomeForUser.Designer.cs">
       <DependentUpon>HomeForUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,13 +116,25 @@
     <Compile Include="Presentation Layer\ProductManagement.Designer.cs">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\AdminAccountManagement.resx">
+      <DependentUpon>AdminAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\CategoryManagement.resx">
       <DependentUpon>CategoryManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\CreateSale.resx">
       <DependentUpon>CreateSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\EmployeeManagement.resx">
+      <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\HomeForAdmin.resx">
       <DependentUpon>HomeForAdmin.cs</DependentUpon>
@@ -112,11 +142,17 @@
     <EmbeddedResource Include="Presentation Layer\HomeForUser.resx">
       <DependentUpon>HomeForUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\ProductManagement.resx">
       <DependentUpon>ProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

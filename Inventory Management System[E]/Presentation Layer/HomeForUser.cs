@@ -13,13 +13,11 @@ namespace Inventory_Management_System_E_.Presentation_Layer
 {
     public partial class HomeForUser : Form
     {
-        int id = 0;
         string username;
         public HomeForUser(string username)
         {
             this.username = username;
             InitializeComponent();
-            updateUserInfoButton.Click += this.RefreshGridView;
         }
 
         private void HomeForUser_FormClosing(object sender, FormClosingEventArgs e)
@@ -27,79 +25,35 @@ namespace Inventory_Management_System_E_.Presentation_Layer
             Application.Exit();
         }
 
-        private void HomeForUser_Load(object sender, EventArgs e)
-        {
-            UserService userService = new UserService();
-            id = userService.GetUserId(username);
-            userService = new UserService();
-            loadUserInfoDataGridView.DataSource = userService.GetUser(id);
-            userService = new UserService();
-            nameTextBox.Text = userService.GetUserName(id);
-            userService = new UserService();
-            useNameTextBox.Text = userService.GetUserUsername(id);
-            userService = new UserService();
-            passwordTextBox.Text = userService.GetUserPassword(id);
-            userService = new UserService();
-            emailTextBox.Text = userService.GetUserEmail(id);
-            userService = new UserService();
-            dateOfBirthTimePicker.Text = userService.GetUserDateOfBirth(id);
-            userService = new UserService();
-            genderComboBox.Text = userService.GetUserGender(id);
-
-
-        }
-        void RefreshGridView(object sender, EventArgs e)
-        {
-            UserService userService = new UserService();
-            id = userService.GetUserId(username);
-            userService = new UserService();
-            loadUserInfoDataGridView.DataSource = userService.GetUser(id);
-            userService = new UserService();
-            nameTextBox.Text = userService.GetUserName(id);
-            userService = new UserService();
-            useNameTextBox.Text = userService.GetUserUsername(id);
-            userService = new UserService();
-            passwordTextBox.Text = userService.GetUserPassword(id);
-            userService = new UserService();
-            emailTextBox.Text = userService.GetUserEmail(id);
-            userService = new UserService();
-            dateOfBirthTimePicker.Text = userService.GetUserDateOfBirth(id);
-            userService = new UserService();
-            genderComboBox.Text = userService.GetUserGender(id);
-        }
-
-        private void updateUserInfoButton_Click(object sender, EventArgs e)
-        {
-            UserService userService = new UserService();
-            int result = userService.UpdateUser(id, nameTextBox.Text, useNameTextBox.Text, passwordTextBox.Text, emailTextBox.Text, dateOfBirthTimePicker.Text, genderComboBox.Text);
-            if (result > 0)
-            {
-                MessageBox.Show("User updated successfully");
-            }
-            else
-            {
-                MessageBox.Show("Error updating user");
-            }
-        }
-
-        private void CategoryManagementButton_Click(object sender, EventArgs e)
+        private void CategoryButton_Click(object sender, EventArgs e)
         {
             CategoryManagement categoryManagement = new CategoryManagement(username);
             categoryManagement.Show();
             this.Hide();
         }
 
-        private void ProductManagementButton_Click(object sender, EventArgs e)
+        private void ProductsButton_Click(object sender, EventArgs e)
         {
             ProductManagement productManagement = new ProductManagement(username);
             productManagement.Show();
             this.Hide();
         }
 
-        private void logOutButton_Click(object sender, EventArgs e)
+        private void EmployeeAccountUpdateButton_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            
+        }
+
+        private void HomeForUser_Load(object sender, EventArgs e)
+        {
+            UserService userService = new UserService();
+            EmployeeNameLinkLabel.Text = userService.GetName(username);
+        }
+
+        private void EmployeeNameLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            UserManagement userManagement = new UserManagement(username);
+            userManagement.Show();
             this.Hide();
         }
     }

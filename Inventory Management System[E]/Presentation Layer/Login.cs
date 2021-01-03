@@ -56,5 +56,17 @@ namespace Inventory_Management_System_E_.Presentation_Layer
                 }
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void RestrationLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registration registration = new Registration();
+            registration.Show();
+            this.Hide();
+        }
     }
 }

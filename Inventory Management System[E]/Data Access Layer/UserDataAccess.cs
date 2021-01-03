@@ -54,7 +54,7 @@ namespace Sales_and_Inventory_Management_System.Data_Access_Layer
                 user.Id = (int)reader["Id"];
                 user.Name = reader["Name"].ToString();
                 user.Username = reader["UserName"].ToString();
-                user.Password = reader["Password"].ToString();
+                //user.Password = reader["Password"].ToString();
                 user.Email = reader["Email"].ToString();
                 user.DateOfBirth = reader["DateOfBirth"].ToString();
                 user.Gender = reader["Gender"].ToString();
@@ -80,7 +80,19 @@ namespace Sales_and_Inventory_Management_System.Data_Access_Layer
         }
         public int InsertUser(User user)
         {
-            string sql = "INSERT INTO Users(Name,Username,Password,Email,DateOfBirth,Gender,Type) VALUES('" + user.Name + "','"+user.Username+"','"+user.Password+"','"+user.Email+"','"+user.DateOfBirth+"','"+user.Gender+"','"+value+"')";
+            string sql = "INSERT INTO Users(Name,Username,Password,Email,DateOfBirth,Gender,Type) VALUES('" + user.Name + "','"+user.Username+"','"+user.Password+"','"+user.Email+"','"+user.DateOfBirth+"','"+user.Gender+"','"+user.Type+"')";
+            int result = this.dataAccess.ExecuteQuery(sql);
+            return result;
+        }
+        public int InsertUserForReg(User user)
+        {
+            string sql = "INSERT INTO Users(Name,Username,Password,Email,DateOfBirth,Gender,BloodGroup,Type) VALUES('" + user.Name + "','" + user.Username + "','" + user.Password + "','" + user.Email + "','" + user.DateOfBirth + "','" + user.Gender + "','" + user.BloodGroup + "','" + value + "')";
+            int result = this.dataAccess.ExecuteQuery(sql);
+            return result;
+        }
+        public int UpdateUserForAdmin(User user)
+        {
+            string sql = "UPDATE Users SET Name='" + user.Name + "',Username='" + user.Username + "',Password='" + user.Password + "',Email='" + user.Email + "',DateOfBirth='" + user.DateOfBirth + "',Gender='" + user.Gender + "',Type='" + user.Type + "' WHERE Id=" + user.Id;
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
@@ -102,6 +114,13 @@ namespace Sales_and_Inventory_Management_System.Data_Access_Layer
             SqlDataReader reader = this.dataAccess.GetData(sql);
             reader.Read();
             return reader["Type"].ToString();
+        }
+        public string GetName(string username)
+        {
+            string sql = "SELECT * FROM Users WHERE Username='" + username + "'";
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            reader.Read();
+            return reader["Name"].ToString();
         }
 
         public string GetUserDateOfBirth(int id)
